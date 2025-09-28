@@ -1,70 +1,53 @@
-# React + TypeScript + Vite
+# E-commerce 🛒
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación de E-commerce desarrollada con **TypeScript**, **React**, **Zustand** y **Vite**.  
+Este proyecto está orientado a demostrar buenas prácticas de desarrollo frontend, gestión de estado global y uso de tipado fuerte para garantizar escalabilidad y mantenibilidad en aplicaciones comerciales.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Propósito del proyecto
 
-## Expanding the ESLint configuration
+Las aplicaciones de E-commerce son un caso real en desarrollo frontend, y este proyecto se quiere mostrar:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Dominio de **TypeScript** y la importancia del tipado en aplicaciones con datos dinámicos y complejos.
+- Implementar **gestión global de estado** con Zustand para carrito y favoritos, evitando soluciones más pesadas como Redux pero manteniendo claridad y escalabilidad.
+- Usar un entorno moderno con **Vite** para maximizar rendimiento y productividad.
+- Demostrar **buenas prácticas de arquitectura de componentes** y organización de código en un proyecto realista.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## ✨ Funcionalidades
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- 🛍️ Visualización de productos con imágenes y precios.
+- 🛒 Carrito de compras: agregar, eliminar, aumentar/disminuir cantidad.
+- ❤️ Gestión de favoritos con persistencia en `localStorage`.
+- 💰 Total del carrito calculado automáticamente.
+- 🔍 Filtrado de productos por categoría, nombre y precio.
+- 🎨 Interfaz responsiva y limpia con **Tailwind CSS**.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🛠️ Tecnologías utilizadas
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-# E-commerce
+- React 18
+- TypeScript
+- Zustand
+- Vite
+- Tailwind CSS
+
+---
+
+## ⚡ Demo en producción
+
+Se puede ver la aplicación en funcionamiento desde la sección de About con un enlace directo a Vercel.
+
+---
+
+## 💡 Valor para empresas
+
+Este proyecto ejemplifica:
+
+- Capacidad de trabajar con entornos modernos de desarrollo frontend.
+- Aplicación de **TypeScript** para proyectos mantenibles y escalables.
+- Uso de patrones de arquitectura y estado adaptados a la complejidad de un E-commerce.
+- Enfoque en **escalabilidad, tipado fuerte y buenas prácticas de código**.
