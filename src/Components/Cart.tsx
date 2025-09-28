@@ -45,7 +45,7 @@ export default function Cart() {
             <div className="space-y-4">
               {cartItems.map(item => (
                 <div key={item.id} className="grid grid-cols-5 items-center gap-2">
-                  <img src={item.images} alt={item.title} className="w-12 h-12 object-cover rounded" />
+                  <img src={item.images[0]} alt={item.title} className="w-12 h-12 object-cover rounded" />
                   <span className="truncate">{item.title}</span>
                   <span>${item.price}</span>
                   <div className="flex items-center gap-1">

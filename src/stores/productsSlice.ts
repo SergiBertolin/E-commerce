@@ -1,4 +1,4 @@
-import { StateCreator } from "zustand"
+import type { StateCreator } from "zustand"
 import { getCategories, getProducts } from "../services/ProductsService"
 import type { Categories, Products, ProductFiltered, CategoryFiltered, PriceFiltered } from "../types"
 
